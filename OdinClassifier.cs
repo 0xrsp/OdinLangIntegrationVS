@@ -16,7 +16,6 @@ namespace OdinLangIntegrationVS
         {
             foreach (var textChange in args.Changes)
             {
-                Debug.WriteLine("Changed:{0}-{1}", textChange.NewPosition, textChange.NewEnd);
                 SnapshotSpan changeSpan = new SnapshotSpan(args.After, textChange.NewPosition, textChange.NewLength);
                 ClassificationChanged?.Invoke(this, new ClassificationChangedEventArgs(changeSpan));
             }

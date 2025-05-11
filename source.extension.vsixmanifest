@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="OdinLangIntegrationVS.b1c27ead-1e5c-4a55-ad24-995cad9540af" Version="1.0" Language="en-US" Publisher="Company" />
+        <Identity Id="OdinLangIntegrationVS.b1c27ead-1e5c-4a55-ad24-995cad9540af" Version="0.1" Language="en-US" Publisher="xrsp" />
         <DisplayName>OdinLangIntegrationVS</DisplayName>
-        <Description xml:space="preserve">Empty VSIX Project.</Description>
+        <Description xml:space="preserve">Visual Studio syntax highlighting for Odin programming language.</Description>
         <Preview>true</Preview>
     </Metadata>
     <Installation>

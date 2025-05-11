@@ -45,11 +45,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Parser\OdinParser.cs" />
-    <Compile Include="Parser\Token.cs" />
-    <Compile Include="Parser\TokenType.cs" />
+    <Compile Include="HLParser\OdinHLParser.cs" />
+    <Compile Include="HLParser\HLElement.cs" />
+    <Compile Include="HLParser\HLElementType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OdinClassificationFormatDefinition.cs" />
     <Compile Include="OdinClassifier.cs" />
     <Compile Include="OdinClassifierProvider.cs" />
     <Compile Include="OdinContentTypeDefinition.cs" />

@@ -1,12 +1,16 @@
 ﻿namespace OdinLangIntegrationVS.Parser
 {
-    internal enum TokenType
+    internal enum HLElementType
     {
         KEYWORD,
-        IDENTIFIER,
+        IDENT,
         TYPE,
         OPERATOR,
         PUNCTUATION,
         COMMENT,
+        SYM_REF,
+        SYM_DEF,
+        STRING_LITERAL,
+        NUMBER,
     }
 }

@@ -2,12 +2,12 @@
 
 namespace OdinLangIntegrationVS.Parser
 {
-    internal class Token
+    internal class HLElement
     {
         public Span SourceSpan { get; }
-        public TokenType Type { get; }
+        public HLElementType Type { get; }
 
-        public Token(Span sourceSpan, TokenType type)
+        public HLElement(Span sourceSpan, HLElementType type)
         {
             SourceSpan = sourceSpan;
             Type = type;
