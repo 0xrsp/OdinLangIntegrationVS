@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Diagnostics;
-using System.Drawing;
-using System.Security.Claims;
-using System.Security.Cryptography;
 using System.Text;
-using System.Windows.Media.Media3D;
-using Microsoft.VisualStudio.PlatformUI;
-using Microsoft.VisualStudio.PlatformUI.OleComponentSupport;
 using Microsoft.VisualStudio.Text;
 
 namespace OdinLangIntegrationVS.Parser

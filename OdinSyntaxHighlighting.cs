@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.Language.StandardClassification;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
@@ -11,9 +10,7 @@ namespace OdinLangIntegrationVS
     {
         private readonly IClassificationType _keywordType;
         private readonly IClassificationType _identType;
-        private readonly IClassificationType _plaintextType;
         private readonly IClassificationType _typeType;
-        //private readonly IClassificationType _whitespaceType;
         private readonly IClassificationType _commentType;
         private readonly IClassificationType _operatorType;
         private readonly IClassificationType _punctuationType;
@@ -28,12 +25,10 @@ namespace OdinLangIntegrationVS
         {
             _keywordType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Keyword);
             _identType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Identifier);
-            _plaintextType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Text);
             _punctuationType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Punctuation);
             _typeType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Type);
             _commentType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Comment);
             _operatorType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Operator);
-            //_whitespaceType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.WhiteSpace);
             _numberType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.Number);
             _symRefType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.SymbolReference);
             _stringType = classificationTypeRegistry.GetClassificationType(PredefinedClassificationTypeNames.String);
@@ -46,6 +41,7 @@ namespace OdinLangIntegrationVS
         {
             switch (type)
             {
+                default:
                 case HLElementType.IDENT:
                     return _identType;
                 case HLElementType.KEYWORD:
@@ -66,8 +62,6 @@ namespace OdinLangIntegrationVS
                     return _numberType;
                 case HLElementType.STRING_LITERAL:
                     return _stringType;
-                default:
-                    return _plaintextType;
             }
         }
 

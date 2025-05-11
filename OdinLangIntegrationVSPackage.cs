@@ -25,7 +25,6 @@ namespace OdinLangIntegrationVS
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [ProvideAutoLoad(UIContextGuids80.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
     [Guid(OdinLangIntegrationVSPackage.PackageGuidString)]
     public sealed class OdinLangIntegrationVSPackage : AsyncPackage
     {
